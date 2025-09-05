@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Deals - Affiliate Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px 10%;
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0ef;
+    }
+
+    .home {
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .home h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .home p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn-box {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #0ef;
+      color: #111;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn-box:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    .products {
+      padding: 80px 10%;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #2575fc;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">Top Deals</a>
+    <nav class="navbar">
+      <a href="#mens">Mens</a>
+      <a href="#womens">Womens</a>
+      <a href="#electronics">Electronics</a>
+      <a href="#kids">Kids</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="home">
+    <div class="home-content">
+      <h1>Shop Smart, Save Big</h1>
+      <p>Find the best deals on top products with exclusive affiliate discounts.</p>
+      <a href="#mens" class="btn-box">Start Shopping</a>
+    </div>
+  </section>
+
+  <!-- Mens Section -->
+  <section id="mens" class="products" style="background-color: #f1f8ff;">
+    <h2 class="section-title">Mens</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71p1q87pYcL._AC_UL320_.jpg" alt="Men's Polo T-shirt">
+        <h3>Men's Polo T-shirt</h3>
+        <p class="price">₹799</p>
+        <a href="https://www.amazon.in/dp/B09V7J6B2M?tag=YOUR-AFFILIATE-ID" class="btn-box" target="_blank">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Womens Section -->
+  <section id="womens" class="products" style="background-color: #fff0f5;">
+    <h2 class="section-title">Womens</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61l6vy1hYVL._AC_UL320_.jpg" alt="BTS Oversized Graphic T-shirt">
+        <h3>BTS Oversized Graphic T-shirt</h3>
+        <p class="price">₹499</p>
+        <a href="https://www.amazon.in/dp/B09QX28M5P?tag=YOUR-AFFILIATE-ID" class="btn-box" target="_blank">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Electronics Section -->
+  <section id="electronics" class="products" style="background-color: #f9f9f9;">
+    <h2 class="section-title">Electronics</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71hIfcIPyxS._AC_UL320_.jpg" alt="iPhone 13">
+        <h3>Apple iPhone 13 (128GB)</h3>
+        <p class="price">₹43,900</p>
+        <a href="https://www.amazon.in/dp/B09G9FPGTN?tag=YOUR-AFFILIATE-ID" class="btn-box" target="_blank">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kids Section -->
+  <section id="kids" class="products" style="background-color: #e8fdf5;">
+    <h2 class="section-title">Kids</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81OdZtnfd9L._AC_UL320_.jpg" alt="Kids Toy Car">
+        <h3>Kids Remote Control Car</h3>
+        <p class="price">₹1,299</p>
+        <a href="https://www.amazon.in/dp/B08X1ZWBJ9?tag=YOUR-AFFILIATE-ID" class="btn-box" target="_blank">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Top Deals | Affiliate Marketing Store</p>
+    <p>Disclaimer: We may earn a small commission from affiliate links at no extra cost to you.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
